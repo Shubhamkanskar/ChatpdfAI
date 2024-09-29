@@ -7,7 +7,7 @@ import { FileText, Eye, EyeOff } from "lucide-react"; // Import eye icons
 import axios from "axios";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = import.meta.env.VITE_API_URL;
 
 export function PdfaiNeonAuth({ onLoginSuccess }) {
   const [isLogin, setIsLogin] = useState(true);
